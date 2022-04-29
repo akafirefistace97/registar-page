@@ -1,0 +1,21 @@
+INSERT INTO products VALUES (NULL,'ashwajit',20,1,21-02-2022)
+INSERT INTO products (product_name)VALUES ('ashwajit')#for specific colounm
+INSERT INTO products (product_name, product_cost)VALUES ('ashwajit'20)#for specific colounm
+
+# update query
+UPDATE products SET product_cost=15, products_quntity=2;
+UPDATE products SET product_cost=15, products_quntity=4 WHERE id =3;
+# select qurry
+SELECT * FROM products ;
+SELECT product_name FROM products ;
+SELECT product_name,product_cost FROM products ;
+SELECT product_name,product_cost FROM products WHERE products_quntity=3 ;
+SELECT * FROM products WHERE products_quntity=3 ;
+SELECT * FROM products WHERE products_quntity=3 AND product_cost = 10 ;#if both condition is true
+SELECT * FROM products WHERE products_quntity=3 OR product_cost=15; #if any condition is true
+
+#join query
+
+
+#delete
+DELETE FROM products WHERE id=2;
